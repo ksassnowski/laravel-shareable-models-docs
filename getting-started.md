@@ -22,7 +22,7 @@ class Article extends Model implements ShareableInterface
 In order to create a shareable link for a particular `Article` you can utilise the `ShareableLink::buildFor()` factory method.
 
 ```php
-public function ShareableLink::buildFor(ShareableInterface $entity): ShareableLinkBuilder;
+public static function ShareableLink::buildFor(ShareableInterface $entity): ShareableLinkBuilder;
 ```
 
 As you can see, this method returns an instance of `ShareableLinkBuilder`. This class allows you to configure the link to your liking. When you are done configuring simply call the `build()` method on the builder to create the actual link.
@@ -33,8 +33,6 @@ $article = Article::find(1);
 $link = ShareableLink::buildFor($article)
     ->setActive()
     ->build();
-    
-var_dump($link);
 ```
 
 
