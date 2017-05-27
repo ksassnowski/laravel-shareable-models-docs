@@ -32,6 +32,17 @@ Migrating: 2017_05_21_232515_create_shareable_links_table
 Migrated:  2017_05_21_232515_create_shareable_links_table
 ```
 
+## Register the middleware
+
+Add the following line to the `$routeMiddleware` array in your `app/Http/Kernel.php`to register the middleware that comes with this package.
+
+```php
+protected $routeMiddleware = [
+    'shared' => \Sassnowski\LaravelShareableModel\Http\Middleware\ValidateShareableLink::class,
+
+];
+```
+
 ## \(Optional\) Publish assets
 
 If you want, you can publish the packages assets by running the following command.
