@@ -23,5 +23,5 @@ Then add the service provider to your `config/app.php`.
 ],
 ```
 
-
+That's it for the basic setup. Let's move on to the interesting part!
 
