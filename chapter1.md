@@ -2,8 +2,8 @@
 
 ## Requirements
 
-* PHP &gt;= 7.0
-* Laravel &gt;= 5.4
+* `PHP >= 7.0`
+* `Laravel >= 5.4`
 
 ## Installing the package
 
