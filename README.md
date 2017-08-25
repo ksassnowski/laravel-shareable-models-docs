@@ -24,7 +24,9 @@ Route::get('/shared/{shareable_link}', ['middleware' => 'shared', function (Shar
 // object(User)#1 (0) {}
 ```
 
-And you're ready to go. Here's a more complete example:
+The hash in the url gets resolved automatically by the provided `shared` middleware. You can then accessed the shared model via the `shareable` property of the link. 
+
+Here's a more complete example:
 
 ```php
 <?php

@@ -80,5 +80,5 @@ $ curl http://localhost:8000/shared/4aQQLDa525h8NVPGxLZ4hqx0l46
 {"id":1,"title":"The Raven","contents":"Once upon a midnight dreary, while I pondered, weak and weary...","created_at":"2017-05-31 19:35:28","updated_at":"2017-05-31 19:35:28"}
 ```
 
-And that's the basic workflow. At this point, you can treat it like any other route in your application. You have absolute freedom to do whatever you want with this shared resource. Think of it as a regular `show` route but instead of being defined for every model it is only defined for the ones you shared first. This gives you an incredible amount of flexibility.
+And that's the basic workflow. At this point, you can treat it like any other route in your application. You have absolute freedom to do whatever you want with this shared resource. Think of it as a regular `show` route **but instead of being defined for every model it is only defined for the ones you shared first**. This gives you an incredible amount of flexibility.
 
