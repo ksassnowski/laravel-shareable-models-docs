@@ -13,7 +13,9 @@ Require the package through composer
 $ composer require sassnowski/laravel-shareable-models
 ```
 
-Then add the service provider to your `config/app.php`.
+### Register the Service Provider \(Laravel &lt;= 5.4\)
+
+Laravel 5.5 introduced auto discovery support. If you are still on 5.4 add the service provider to your `config/app.php`.
 
 ```php
 // app/config.php
