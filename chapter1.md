@@ -21,7 +21,7 @@ Laravel 5.5 introduced auto discovery support. If you are still on 5.4 add the s
 // app/config.php
 
 'providers' => [
-    Sassnowski\LaravelShareableModel\ShareableLinkServiceProvider::class,    
+    Sassnowski\LaravelShareableModel\ShareableLinkServiceProvider::class,
 ],
 ```
 
@@ -41,7 +41,6 @@ Add the following line to the `$routeMiddleware` array in your `app/Http/Kernel.
 ```php
 protected $routeMiddleware = [
     'shared' => \Sassnowski\LaravelShareableModel\Http\Middleware\ValidateShareableLink::class,
-
 ];
 ```
 

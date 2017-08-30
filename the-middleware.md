@@ -1,4 +1,4 @@
-# The Middleware
+# A look at the Middleware
 
 > Reading this section is **not required** in order to use this package. This is simply to give a deeper look into the packages internals.
 
