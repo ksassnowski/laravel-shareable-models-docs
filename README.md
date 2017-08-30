@@ -24,7 +24,7 @@ Route::get('/shared/{shareable_link}', ['middleware' => 'shared', function (Shar
 // object(User)#1 (0) {}
 ```
 
-The hash in the url gets resolved automatically by the provided `shared` middleware. You can then accessed the shared model via the `shareable` property of the link. 
+The hash in the url gets resolved automatically by the provided `shared` middleware. You can then accessed the shared model via the `shareable` property of the link.
 
 Here's a more complete example:
 
@@ -43,15 +43,22 @@ $user = User::create([
 ]);
 
 $link = ShareableLink::buildFor($user)
-    // We can password protect the created link
+    // We can password protect the created link.
     ->setPassword('hunter2')
 
-    // By default generated links are inactive
+    // By default generated links are inactive.
     ->setActive()
 
     // You can prefix the created link to create unique routes
-    // for different models
+    // for different models.
     ->setPrefix('users')
+    
+    // We can configure the link to throw an event every time
+    // it is visited by a user. That way you can attach arbitrary
+    // event listeners to it. For example, you might want to
+    // notify the user who shared the link via email that it has
+    // been visited.
+    ->notifyOnVisit()
 
     // We can assign an expiration date to a link to ensure
     // it can only be visited until a certain date.
