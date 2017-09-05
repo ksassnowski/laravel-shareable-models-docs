@@ -65,6 +65,8 @@ Route::get('shared/{shareable_link}', ['middleware' => 'shared', function (Share
 });
 ```
 
+**Note that we are applying the `shared` middleware to our route. This is required for the route model binding to work.**
+
 Now if we try to access the generated link we should see the JSON serialized `Article` we shared earlier.
 
 ```php
