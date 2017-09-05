@@ -52,7 +52,5 @@ ShareableLink::buildFor($entity)->notifyOnVisit();
 
 When this option is set, a `LinkWasVisited` event gets thrown every time a user visits the link. You can access the visited link via the `$link` property on the event.
 
-Note that the event only gets thrown if the visitor actually passes all checks that might have been configured on the link, e.g. password protection. So someone attempts to visit an expired link or enters a wrong password this event will not get thrown. 
-
-
+Note that the event only gets thrown if the visitor actually passes all checks that might have been configured on the link, e.g. password protection. So if someone attempts to visit an expired link or enters a wrong password this event will not get thrown.
 

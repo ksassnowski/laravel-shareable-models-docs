@@ -53,7 +53,7 @@ $article = $link->shareable;
 
 ## Creating a route
 
-Now that we have a link what do we even do with it. Until now our application does not even know how to respond to that url. So lets create a new route.
+Now that we have a link what can we do with it? Until now our application does not even know how to respond to that url. So lets create a new route.
 
 ```php
 <?php
