@@ -27,7 +27,5 @@ If the user now visits `https://my-site.com/shared/files/egpZWPKbzmUB8aDz57ZXh58
 
 ## How it works
 
-Each shared model gets assigned a unique `uuid`. From that `uuid` a hash is generated using the fantastic [Hashids](https://github.com/ivanakimov/hashids.php) library. This hash is what you see in the resulting link. The route model binding decodes that hash to produce the `uuid` again. That `uuid` is then used to query the `shareable_links` table for the link instance.
-
-You can configure the underlying Hashids library in the configuration, e.g. specifying the used alphabet or length of the produced hashes.
+Each shared model gets assigned a unique `uuid` . This uuid is what you see in the resulting link. The `uuid` is then used to query the `shareable_links` table for the link instance.
 
