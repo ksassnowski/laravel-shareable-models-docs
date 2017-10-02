@@ -29,3 +29,5 @@ If the user now visits `https://my-site.com/shared/files/egpZWPKbzmUB8aDz57ZXh58
 
 Each shared model gets assigned a unique `uuid` . This uuid is what you see in the resulting link. The `uuid` is then used to query the `shareable_links` table for the link instance.
 
+The middleware performs a series of checks based on the link's configuration. For instance, it checks whether the link is expired, requires a password or is inactive.
+

@@ -60,6 +60,8 @@ Now that we have a link what can we do with it? Until now our application does n
 
 // web.php
 
+use Sassnowski\LaravelShareableModel\Shareable\ShareableLink;
+
 Route::get('shared/{shareable_link}', ['middleware' => 'shared', function (ShareableLink $link) {
     return $link->shareable;
 }]);
