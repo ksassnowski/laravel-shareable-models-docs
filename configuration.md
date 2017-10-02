@@ -20,15 +20,5 @@ This section specifies where the middleware will try to redirect if the link can
 
 **Note: **The `password_protected` is already implemented by the package. It is not recommended to change this route since this would require you to implement the route yourself. If you simply want to change the default view see [Password protected routes](/password-protected-routes.md#overriding).
 
-## Hashids
-
-You can configure the underlying Hashid library to customize the generated hash.
-
-| Option | What does it do? | Default |
-| :--- | :--- | :--- |
-| **min\_hash\_length** | The minimum length of the generated hash. Normally the length of the hash is dependent on the length of the input string. With this option you can enforce a minimum output length. | **10** |
-| **salt** | The salt used to create the hashes. | **env\('APP\_KEY'\)** |
-| **alphabet** | Specifies the allowed characters that can occur in the created hash. If you want to create hashes that are a bit more easy to remember you might want to remove ambiguous characters from the alphabet. | **abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890** |
-
 
 
