@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* `PHP ^5.6.4|^7.0.8`
+* `PHP ^5.6|^7.0`
 * `Laravel >= 5.4`
 
 ## Installing the package
@@ -32,6 +32,10 @@ $ php artisan migrate
 
 Migrating: 2017_05_21_232515_create_shareable_links_table
 Migrated:  2017_05_21_232515_create_shareable_links_table
+Migrating: 2017_08_30_200213_add_should_notify_column_to_shareable_links_table.php
+Migrated:  2017_08_30_200213_add_should_notify_column_to_shareable_links_table.php
+Migrating: 2017_10_02_200213_remove_hash_column_from_shareable_links_table.php
+Migrated:  2017_10_02_200213_remove_hash_column_from_shareable_links_table.php
 ```
 
 ## Register the middleware
