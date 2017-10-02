@@ -11,7 +11,7 @@ class User extends Model {}
 And turns it into this
 
 ```
-https://my-sick-website.com/shared/egpZWPKbzmUB8aDz57ZXh58b8Jk
+https://my-sick-website.com/shared/0004c748a2a14b9293a73d0051840805
 ```
 
 Now all you have to do is define a route
@@ -52,7 +52,7 @@ $link = ShareableLink::buildFor($user)
     // You can prefix the created link to create unique routes
     // for different models.
     ->setPrefix('users')
-    
+
     // We can configure the link to throw an event every time
     // it is visited by a user. That way you can attach arbitrary
     // event listeners to it. For example, you might want to
@@ -67,7 +67,7 @@ $link = ShareableLink::buildFor($user)
 
 var_dump($link->url);
 
-// string(57) "http://localhost/shared/users/egpZWPKbzmUB8aDz57ZXh58b8Jk"
+// string(57) "http://localhost/shared/users/0004c748a2a14b9293a73d0051840805"
 ```
 
 
