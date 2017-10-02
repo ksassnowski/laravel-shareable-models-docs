@@ -63,6 +63,10 @@ $link = ShareableLink::buildFor($user)
     // We can assign an expiration date to a link to ensure
     // it can only be visited until a certain date.
     ->setExpirationDate(Carbon::now()->addDay())
+    
+    // Finally, when you have configured the link to your liking
+    // all that is left to do is to actually create it. This will
+    // save the created link to the database and return the instance.
     ->build();
 
 var_dump($link->url);
