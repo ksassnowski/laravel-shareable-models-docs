@@ -39,7 +39,7 @@ use Sassnowski\LaravelShareableModel\ShareableLink;
 $user = User::create([
     'name' => 'Kai Sassnowski',
     'email' => 'me@kai-sassnowski.com',
-    'password' => bcrypt('super-secret'),
+    'password' => bcrypt('super-secret'), // please don't hack me
 ]);
 
 $link = ShareableLink::buildFor($user)
@@ -50,7 +50,8 @@ $link = ShareableLink::buildFor($user)
     ->setActive()
 
     // You can prefix the created link to create unique routes
-    // for different models.
+    // for different models. For example this would create a 
+    // url like `/shared/users/{uuid}`.
     ->setPrefix('users')
 
     // We can configure the link to throw an event every time
@@ -63,7 +64,7 @@ $link = ShareableLink::buildFor($user)
     // We can assign an expiration date to a link to ensure
     // it can only be visited until a certain date.
     ->setExpirationDate(Carbon::now()->addDay())
-    
+
     // Finally, when you have configured the link to your liking
     // all that is left to do is to actually create it. This will
     // save the created link to the database and return the instance.
