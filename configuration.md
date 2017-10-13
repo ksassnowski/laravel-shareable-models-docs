@@ -14,7 +14,7 @@ You can configure the base url by changing the `base_url` parameter.
 
 | Option | What does it do? | Default |
 | :--- | :--- | :--- |
-| **base\_url** | Changes the base url of the generated link. By default the generated urls look like this: _/shared/{uuid}_. Changing this option to _/foo_ would result in links looking like this: _/foo/{uuid}_ | _**/shared**_ |
+| **base\_url** | Changes the base url of the generated link. By default the generated urls look like this: _/shared/{uuid}_. Changing this option to _/foo_ would result in links looking like this: _/foo/{uuid}_ | **/shared** |
 
 ## Redirect Routes
 
