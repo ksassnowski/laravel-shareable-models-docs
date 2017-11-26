@@ -32,7 +32,7 @@ Here's a more complete example:
 <?php
 
 use Carbon\Carbon;
-use Sassnowski\LaravelShareableModel\ShareableLink;
+use Sassnowski\LaravelShareableModel\Shareable\ShareableLink;
 
 // Assume we have a user record for which we want to generate 
 // a shareable link 
