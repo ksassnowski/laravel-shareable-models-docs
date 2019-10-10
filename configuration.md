@@ -1,4 +1,4 @@
-# Configuring the package
+# Configuration
 
 To customize the package's config you first need to publish its assets. Run the following command in your terminal.
 
@@ -26,5 +26,5 @@ This section specifies where the middleware will try to redirect if the link can
 | **expired** | Route the user will get redirected to if the visited link has expired. | **/shared/expired** |
 | **password\_protected** | Route the user will get redirected to if the visited link is password protected and the user has not yet entered the correct password. | **/shared/password** |
 
-**Note: **The `password_protected` is already implemented by the package. It is not recommended to change this route since this would require you to implement the route yourself. If you simply want to change the default view see [Password protected routes](/password-protected-routes.md#overriding).
+**Note:** The `password_protected` is already implemented by the package. It is not recommended to change this route since this would require you to implement the route yourself. If you simply want to change the default view see [Password protected routes](password-protected-routes.md#overriding).
 

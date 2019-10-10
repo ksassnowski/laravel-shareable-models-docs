@@ -67,7 +67,7 @@ Route::get('shared/{shareable_link}', ['middleware' => 'shared', function (Share
 }]);
 ```
 
-**Note that we are applying the **`shared`** middleware to our route. This is required for the route model binding to work.**
+**Note that we are applying the** `shared` **middleware to our route. This is required for the route model binding to work.**
 
 Now if we try to access the generated link we should see the JSON serialized `Article` we shared earlier.
 
@@ -78,7 +78,7 @@ var_dump($link->url);
 // http://localhost:8000/shared/0004c748a2a14b9293a73d0051840805
 ```
 
-```
+```text
 $ curl http://localhost:8000/shared/0004c748a2a14b9293a73d0051840805
 
 {"id":1,"title":"The Raven","contents":"Once upon a midnight dreary, while I pondered, weak and weary...","created_at":"2017-05-31 19:35:28","updated_at":"2017-05-31 19:35:28"}

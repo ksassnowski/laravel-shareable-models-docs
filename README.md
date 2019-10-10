@@ -1,4 +1,4 @@
-# Laravel Shareable Models
+# Introduction
 
 This package allows you to generate shareable links from your Eloquent Models. **Think of it as dynamic routes that only exist for some models in your database.**
 
@@ -10,7 +10,7 @@ class User extends Model {}
 
 And turns it into this
 
-```
+```text
 https://my-sick-website.com/shared/0004c748a2a14b9293a73d0051840805
 ```
 
@@ -74,6 +74,4 @@ var_dump($link->url);
 
 // string(57) "http://localhost/shared/users/0004c748a2a14b9293a73d0051840805"
 ```
-
-
 

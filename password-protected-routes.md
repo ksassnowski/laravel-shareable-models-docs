@@ -8,9 +8,9 @@ ShareableLink::buildFor($model)->setPassword('super-secret-password');
 
 If someone now visits the produced url they will get redirected to a password prompt
 
-![](/assets/Screen Shot 2017-08-25 at 14.15.52.png)
+![](.gitbook/assets/screen-shot-2017-08-25-at-14.15.52.png)
 
-## Overriding the default view {#overriding}
+## Overriding the default view <a id="overriding"></a>
 
 In order to override the default view you have to publish the package's vendor assets.
 

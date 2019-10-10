@@ -2,14 +2,14 @@
 
 ## Requirements
 
-* `PHP ^5.6|^7.0`
-* `Laravel >= 5.4`
+* `PHP ^7.0`
+* `Laravel >= 5.4 | ^6.0`
 
 ## Installing the package
 
 Require the package through composer
 
-```
+```text
 $ composer require sassnowski/laravel-shareable-models
 ```
 
@@ -27,7 +27,7 @@ Laravel 5.5 introduced auto discovery support. If you are still on 5.4 add the s
 
 Run the provided migration to create the `shareable_links` table.
 
-```
+```text
 $ php artisan migrate
 
 Migrating: 2017_05_21_232515_create_shareable_links_table
@@ -52,7 +52,7 @@ protected $routeMiddleware = [
 
 If you want, you can publish the packages assets by running the following command.
 
-```
+```text
 php artisan vendor:publish --provider="Sassnowski\LaravelShareableModel\ShareableLinkServiceProvider"
 ```
 

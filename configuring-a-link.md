@@ -4,7 +4,7 @@ The `ShareableLinkBuilder` exposes a number of methods to configure the produced
 
 ## Active and inactive links
 
-**Default: **`false`
+**Default:** `false`
 
 ```php
 ShareableLink::buildFor($entity)->setActive();
@@ -14,7 +14,7 @@ Inactive links will redirect to a different route when visited. You can overwrit
 
 ## Password protecting links
 
-**Default: **`null`
+**Default:** `null`
 
 ```php
 ShareableLink::buildFor($entity)->setPassword('super-secret');
